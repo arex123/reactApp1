@@ -1,6 +1,8 @@
 * create file index.html, index.css, index.js, npm init, git init
 * download parcel 
-* download react, reactdom
+* download react, reactdom,
+* start app by : npx parcel index.html
+* or start app by adding : "start":"parcel index.html", in package.json script 
 
 
 boiler plate code: 
@@ -52,3 +54,39 @@ const HeaderComponent = () =>{
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<HeaderComponent/>)
+
+
+
+
+react jsx can only have one parent so , enclose every thing in method under div or use fragment(which is like a
+empty tag)
+react fragment: 
+<> </>
+<React.Fragment> </React.Fragment>
+
+
+* inline css in react: write css inside an object like and add it in tag with style attribute
+
+const styleObj={
+    backgroundColor:"red",
+}
+
+const jsx=(
+    <div style={styleObj}>
+    </div>
+)
+
+OR
+
+const jsx=(
+    <div style={{  backgroundColor:"red"}}>
+    </div>
+)
+
+
+
+* named import
+import { Title } from './Component'
+
+* Default import
+import Header from './Component'

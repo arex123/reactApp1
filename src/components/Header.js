@@ -1,16 +1,15 @@
-const React = require('react')
-const ReactDOM = require('react-dom/client')
 
-const Title = () =>{
-    <h1 id='title' key='h2'>
+export  const Title = () =>( //note '('  vs '{'
+    <h1 id='title'>
         Food App
     </h1>
-}
+)
 
-const HeaderComponent = () =>{
+
+const Header = () =>{
     return (
         <div className='header'>
-            <Title/>
+            <Title />
             <div className='nav-items'>
                 <ul>
                     <li>Home</li>
@@ -25,5 +24,4 @@ const HeaderComponent = () =>{
     )
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(<HeaderComponent/>)
+export default Header
