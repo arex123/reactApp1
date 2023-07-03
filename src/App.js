@@ -1,28 +1,22 @@
-const React = require('react')
-const ReactDOM = require('react-dom/client')
+// const React = require('react')
+import React from 'react'
+import ReactDOM  from 'react-dom/client'
+// const ReactDOM = require('react-dom/client')
+// const Header  = require('./components/Header')
+import Header from './components/Header'
+import Body from './components/Body'
+import Footer from './components/Footer'
+// const Body  = require('./components/Body')
+// const Footer  = require('./components/Footer')
 
 
-
-const RestaurantCard = () =>{
-    return (
-        <div className='card'>
-            <img src='https://th.bing.com/th/id/OIP.hucFmNcpLJG4iN9hgSBc9gHaEq?pid=ImgDet&rs=1'></img>
-            {/* <h2>Burger King</h2>
-            <h3>Burgers, American</h3>
-            <h4>4.2 stars</h4> */}
-            <h2>{name}</h2>
-            <h3>{cuisines.joins(", ")}</h3>
-            <h4>{lastMileTravelString} minutes</h4>
-        </div>
-    )
-} 
 
 
 
 const AppLayout = () =>{
     return (
         <>
-        <HeaderComponent/>
+        <Header/>
         <Body/>
         <Footer/>
         </>

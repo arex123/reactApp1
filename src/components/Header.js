@@ -1,5 +1,5 @@
 
-export  const Title = () =>( //note '('  vs '{'
+export const Title = () =>( //note '('  vs '{'
     <h1 id='title'>
         Food App
     </h1>
