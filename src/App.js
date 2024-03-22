@@ -1,6 +1,8 @@
-const React = require('react')
-const ReactDOM = require('react-dom/client')
-
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import Body from './components/Body'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 
 const RestaurantCard = () =>{
@@ -22,10 +24,10 @@ const RestaurantCard = () =>{
 const AppLayout = () =>{
     return (
         <>
-        <HeaderComponent/>
-        <Body/>
-        <Footer/>
-        </>
+         <Header/>
+         <Body/>
+         <Footer/>
+         </>
     )
 }
 
